@@ -4,9 +4,9 @@ N = 8  # 체스판 크기
 
 def print_board(genes):
     """체스판을 시각적으로 출력하는 함수"""
-    board = [['.'] * N for _ in range(N)]
+ 보드 = [['.] * _ in range (N)]
     for row, col in enumerate(genes):
-        board[row][col] = 'Q'
+ 보드[row][col] = 'Q'
     for row in board:
         print(' '.join(row))
     print("\n")
@@ -28,7 +28,7 @@ def print_board(genes):
      갈등 += 1
      반품 28 - 충돌 # 최대 충돌이 없는 경우 28 점
 
-    defutate(자기, mutation_rate=0.1):
+    defute(자기, 돌연변이_rate=0.1):
      """랜덤한 돌연변이를 적용하여 개체의 다양성을 증가"""
      무작위인 경우. random() < 돌연변이_rate:
      mutation_type = 랜덤.선택(["swap", "시프트", "reverse"])
